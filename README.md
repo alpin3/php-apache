@@ -2,7 +2,7 @@
 
 Multiple purpose Apache and PHP image based on Alpine
 
-Image is based on the [gliderlabs/alpine](https://registry.hub.docker.com/u/gliderlabs/alpine/) base image
+Image is based on the official [alpine](https://registry.hub.docker.com/u/alpine/) base image
 
 ## Docker image size
 
