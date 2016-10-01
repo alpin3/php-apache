@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.4
 MAINTAINER kost - https://github.com/kost
 
 RUN apk --update add php5-apache2 curl php5-cli php5-json php5-phar php5-openssl && rm -f /var/cache/apk/* && \
