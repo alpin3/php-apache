@@ -1,7 +1,7 @@
 FROM alpine
 MAINTAINER kost - https://github.com/kost
 
-RUN apk --update add php5-apache2 curl php-cli php-json php-phar php-openssl && rm -f /var/cache/apk/* && \
+RUN apk --update add php5-apache2 curl php5-cli php5-json php5-phar php5-openssl && rm -f /var/cache/apk/* && \
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
 mkdir /app && chown -R apache:apache /app && \
 sed -i 's#^DocumentRoot ".*#DocumentRoot "/app"#g' /etc/apache2/httpd.conf && \
