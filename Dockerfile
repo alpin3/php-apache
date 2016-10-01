@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine
+FROM alpine:3.2
 MAINTAINER kost - https://github.com/kost
 
 RUN apk --update add php-apache2 curl php-cli php-json php-phar php-openssl && rm -f /var/cache/apk/* && \
